@@ -12,7 +12,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-RUN pip install bunch
+RUN pip install bunch python-yubico
 
 RUN pecl install mongodb && \
     echo "extension=mongodb.so" > /etc/php/7.0/mods-available/mongodb.ini && \
